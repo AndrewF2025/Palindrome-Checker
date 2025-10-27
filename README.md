@@ -52,3 +52,13 @@ from palindrome_checker import is_palindrome
 
 is_palindrome("Cigar? Toss it in a can. It is so tragic.")  # True
 ```
+
+---
+
+## Installation
+
+Install the required dependencies with:
+
+```
+pip install -r requirements.txt
+```
