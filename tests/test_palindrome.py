@@ -1,5 +1,4 @@
 import pytest
-
 from palindrome_checker import is_palindrome
 
 
@@ -23,5 +22,14 @@ def test_is_palindrome(text, expected):
 
 def test_raw_option():
     # when raw, punctuation matters
-    assert is_palindrome("A man, a plan, a canal: Panama", ignore_non_alnum=True) is True
-    assert is_palindrome("A man, a plan, a canal: Panama", ignore_non_alnum=False) is False
+    assert is_palindrome(
+        "A man, a plan, a canal: Panama", ignore_non_alnum=True
+    ) is True
+    assert is_palindrome(
+        "A man, a plan, a canal: Panama", ignore_non_alnum=False
+    ) is False
+
+
+if __name__ == "__main__":
+    import pytest
+    pytest.main([__file__])
